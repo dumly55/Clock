@@ -3,12 +3,19 @@ import datetime
 
 window = turtle.Screen()
 
-# turtle description named hour_markers
-hour_markers = turtle.Turtle()
-hour_markers.up()
-hour_markers.shape("square")
+# turtle description named marker for the hour markers
+marker = turtle.Turtle()
+marker.up()
+marker.shape("square")
 
 # turtle description named hands
 hands = turtle.Turtle()
 hands.down()
 
+# create the clock
+for hours in range(12):
+    marker.forward(150)
+    marker.stamp()
+    marker.backward(150)
+    marker.left(360/12)
+    
