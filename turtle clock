@@ -7,6 +7,7 @@ window = turtle.Screen()
 marker = turtle.Turtle()
 marker.up()
 marker.shape("square")
+marker.speed(10)
 
 # turtle description named hands
 hands = turtle.Turtle()
@@ -14,8 +15,8 @@ hands.down()
 
 # create the clock
 for hours in range(12):
-    marker.forward(150)
+    marker.forward(300)
     marker.stamp()
-    marker.backward(150)
+    marker.backward(300)
     marker.left(360/12)
     
