@@ -20,3 +20,10 @@ for hours in range(12):
     marker.backward(300)
     marker.left(360/12)
     
+# integrate computer time into the turtle program
+hour = datetime.datetime.now().hour % 12
+minute = datetime.datetime.now().minute
+minute_hand_angle = minute * 6 - 90
+hour_hand_angle = (hour + (minute / 60)) * 30 - 90
+
+
